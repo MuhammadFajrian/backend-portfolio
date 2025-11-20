@@ -25,7 +25,7 @@ module.exports = {
           DEFAULT: '#1f2937',
           dark: '#f9fafb',
           secondary: '#6b7280',
-          'secondary-dark': '#9ca3af',
+          'secondary-dark': '##d1d5db',
         },
         border: {
           DEFAULT: '#e5e7eb',
