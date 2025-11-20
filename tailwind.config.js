@@ -13,6 +13,10 @@ module.exports = {
           DEFAULT: '#14b8a6',
           dark: '#0d9488',
         },
+        secondary: {
+          DEFAULT: 'rgb(var(--secondary) / <alpha-value>)',
+          dark: 'rgb(var(--secondary) / <alpha-value>)',
+        },
         background: {
           DEFAULT: '#ffffff',
           dark: '#0a0a0a',

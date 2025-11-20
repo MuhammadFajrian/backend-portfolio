@@ -5,7 +5,7 @@ const techStacks = [
   },
   {
     category: 'Frameworks',
-    items: ['Spring Boot', 'NestJS', 'Go Fiber', 'Laravel', 'Express.js'],
+    items: ['Spring Boot', 'Quarkus', 'NestJS', 'Laravel', 'Express.js'],
   },
   {
     category: 'Databases',
@@ -26,7 +26,7 @@ export default function TechStack() {
     <section className="bg-surface dark:bg-surface-dark py-16">
       <div className="container">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl text-teal-300 font-bold text-center mb-12">
             Tech Stack & Expertise
           </h2>
           

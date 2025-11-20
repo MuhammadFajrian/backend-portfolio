@@ -47,6 +47,34 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
+
+  /* Carbon-style background with a centered soft light.
+     - Layer 1: centered soft radial light
+     - Layer 2 & 3: subtle crossing repeating-linear-gradients to simulate a weave/carbon texture
+     - Background color adjusts via CSS variables in light/dark modes
+  */
+  .hero-bg {
+    background-color: rgb(12 14 18 / 1);
+    background-image:
+      radial-gradient(circle at center, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.03) 18%, transparent 50%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0 2px, rgba(0,0,0,0.03) 2px 6px),
+      repeating-linear-gradient(-45deg, rgba(255,255,255,0.02) 0 2px, rgba(0,0,0,0.03) 2px 6px);
+    background-size: cover, 8px 8px, 8px 8px;
+    background-position: center, 0 0, 4px 4px;
+    background-repeat: no-repeat, repeat, repeat;
+    transition: background-image 0.25s ease, background-color 0.25s ease;
+  }
+
+  /* Dark mode: deepen base and tweak intensities for better contrast */
+  .dark .hero-bg {
+    background-color: rgb(6 6 8 / 1);
+    background-image:
+      radial-gradient(circle at center, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.02) 15%, transparent 45%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0 2px, rgba(0,0,0,0.18) 2px 6px),
+      repeating-linear-gradient(-45deg, rgba(255,255,255,0.01) 0 2px, rgba(0,0,0,0.18) 2px 6px);
+    background-size: cover, 10px 10px, 10px 10px;
+    background-position: center, 0 0, 5px 5px;
+  }
 }
 
 /* Prose styles for markdown */
